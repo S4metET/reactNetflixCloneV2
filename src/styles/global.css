@@ -1,0 +1,31 @@
+/* Telefon ve masaüstü dahil tüm ekran boyutlarında şeffaf kaydırma çubuğu */
+ body {
+  background-color: black;
+ }
+::-webkit-scrollbar {
+    width: 8px; /* Kaydırma çubuğu genişliği */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Kaydırıcıyı şeffaf yap */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Kaydırma çubuğunun izini şeffaf yap */
+  }
+  
+  /* Ekran genişliği 768px ve üzeri cihazlar için */
+  @media (min-width: 768px) {
+    ::-webkit-scrollbar {
+      width: 12px; /* Masaüstü için daha geniş bir kaydırma çubuğu */
+    }
+  
+    ::-webkit-scrollbar-thumb {
+      background-color: transparent; /* Kaydırıcıyı şeffaf yap */
+    }
+  
+    ::-webkit-scrollbar-track {
+      background-color: transparent; /* Kaydırma çubuğunun izini şeffaf yap */
+    }
+  }
+  
